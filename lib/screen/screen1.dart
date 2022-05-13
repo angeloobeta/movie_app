@@ -7,7 +7,7 @@ class Screen1 extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Screen 1"),
+        title: Text("Screen     1"),
       ),
       body: Center(
         child: Column(
