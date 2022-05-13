@@ -18,7 +18,7 @@ class Screen1 extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushNamed('/screen2');
               },
-              child: Text("Push to Screen 2"),
+              child: Text("Push to Screen 2_"),
             ),
             SizedBox(
               height: 10.0,
