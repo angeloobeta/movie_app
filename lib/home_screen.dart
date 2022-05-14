@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Screen1 extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print("Screen1");
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Screen 1"),
+        title: Text("Screen 1_"),
       ),
       body: Center(
         child: Column(
@@ -18,7 +18,7 @@ class Screen1 extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushNamed('/screen2');
               },
-              child: Text("Push to Screen 2_"),
+              child: Text("Push to Screen 2"),
             ),
             SizedBox(
               height: 10.0,
