@@ -18,7 +18,7 @@ class MovieRemoteDataSourceImpl extends MovieRemoteDataSource {
   Future<List<MovieModel>?> getTrending() async {
     final response = await _client.get(
         Uri.parse(
-            '${Api_constant.BASE_URL}trending/movie/day?api_key=${Api_constant.API_KEY}'),
+            '${ApiConstants.BASE_URL}trending/movie/day?api_key=${ApiConstants.API_KEY}'),
         headers: {'Content-Type': 'application/json'});
 
     if (response.statusCode == 200) {
@@ -35,7 +35,7 @@ class MovieRemoteDataSourceImpl extends MovieRemoteDataSource {
   Future<List<MovieModel>?> getPopular() async {
     final response = await _client.get(
         Uri.parse(
-            '${Api_constant.BASE_URL}movie/popular/day?api_key=${Api_constant.API_KEY}'),
+            '${ApiConstants.BASE_URL}movie/popular?api_key=${ApiConstants.API_KEY}'),
         headers: {'Content-Type': 'application/json'});
 
     if (response.statusCode == 200) {

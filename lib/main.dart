@@ -5,6 +5,7 @@ void main() {
   Client apiClient = Client();
   MovieRemoteDataSource dataSource = MovieRemoteDataSourceImpl(apiClient);
   dataSource.getTrending();
+  dataSource.getPopular();
   // runApp(MaterialApp(
   //   home: HomeScreen(),
   // ));
