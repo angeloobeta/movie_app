@@ -32,7 +32,7 @@ class MovieRemoteDataSourceImpl extends MovieRemoteDataSource {
 
   @override
   Future<List<MovieModel>?> getComingSoon() async {
-    final response = await _client.get('/movie/upcoming');
+    final response = await _client.get('movie/upcoming');
     final movies = MovieResultModel.fromJson(response).movies;
     print(movies);
     return movies;
