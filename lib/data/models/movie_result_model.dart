@@ -8,24 +8,24 @@ String movieResultModelToJson(MovieResultModel data) =>
     json.encode(data.toJson());
 
 class MovieResultModel {
-  List<MovieModel>? results;
+  List<MovieModel>? movies;
 
   MovieResultModel({
-    this.results,
+    this.movies,
   });
   MovieResultModel.fromJson(dynamic json) {
     if (json['results'] != null) {
-      results = [];
+      movies = [];
       json['results'].forEach((v) {
-        results?.add(MovieModel.fromJson(v));
+        movies?.add(MovieModel.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
-    if (results != null) {
-      map['results'] = results?.map((v) => v.toJson()).toList();
+    if (movies != null) {
+      map['results'] = movies?.map((v) => v.toJson()).toList();
     }
     return map;
   }
