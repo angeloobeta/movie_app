@@ -9,8 +9,8 @@ class MovieModel extends MovieEntity {
   MovieModel({
     this.overview,
     this.releaseDate,
-    this.id,
-    this.title,
+    required this.id,
+    required this.title,
     this.adult,
     this.backdropPath,
     this.genreIds,
@@ -37,7 +37,7 @@ class MovieModel extends MovieEntity {
       overview: json['overview'],
       releaseDate: json['release_date'],
       id: json['id'],
-      title: json['title'],
+      title: json['title']?.toString() ?? "",
       adult: json['adult'],
       backdropPath: json['backdrop_path'],
       genreIds: json['genre_ids'] != null ? json['genre_ids'].cast<int>() : [],
@@ -53,8 +53,8 @@ class MovieModel extends MovieEntity {
   }
   final String? overview;
   final String? releaseDate;
-  final int? id;
-  final String? title;
+  final int id;
+  final String title;
   final bool? adult;
   final String? backdropPath;
   final List<int>? genreIds;
