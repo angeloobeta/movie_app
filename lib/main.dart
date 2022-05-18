@@ -10,8 +10,10 @@ void main() {
   MovieRemoteDataSource dataSource = MovieRemoteDataSourceImpl(apiClient);
   MovieRepository movieRepository = MovieRepositoryImp(dataSource);
   movieRepository.getPlayingNow();
-  // movieRepository.getTrending();
+  movieRepository.getTrending();
   dataSource.getTrending();
+  dataSource.getComingSoon();
+  dataSource.getPlayingNow();
   GetTrending getTrending = GetTrending(movieRepository);
   // runApp(MaterialApp(
   //   home: HomeScreen(),
