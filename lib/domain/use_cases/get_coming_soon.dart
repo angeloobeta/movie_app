@@ -14,3 +14,7 @@ class GetComingSoon extends UseCase<List<MovieEntity>?, NoParams> {
     return await repository.getComingSoon();
   }
 }
+
+// Reduce Less Productivity by introducing dependency injection
+// Bolierplate code
+// More memory consumption
