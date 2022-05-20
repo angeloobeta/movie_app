@@ -11,3 +11,7 @@ class GetPlayingNow {
     return await repository.getPlayingNow();
   }
 }
+
+// Caveat
+// Knowledge Transferable
+// Code Uniformity in BigTeam
