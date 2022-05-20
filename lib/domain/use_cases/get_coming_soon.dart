@@ -2,12 +2,15 @@ import 'package:dartz/dartz.dart';
 import 'package:movie_app/domain/entities/app_error.dart';
 import 'package:movie_app/domain/entities/movie_entity.dart';
 import 'package:movie_app/domain/repositories/movie_repository.dart';
+import 'package:movie_app/domain/use_cases/usecases.dart';
 
-class GetComingSoon {
+import '../entities/non_params.dart';
+
+class GetComingSoon extends UseCase<List<MovieEntity>?, NoParams> {
   final MovieRepository repository;
   GetComingSoon(this.repository);
 
-  Future<Either<AppError, List<MovieEntity>?>?> call() async {
+  Future<Either<AppError, List<MovieEntity>?>?> call(NoParams noParams) async {
     return await repository.getComingSoon();
   }
 }
