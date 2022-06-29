@@ -23,7 +23,7 @@ Future<void> main() async {
   // dataSource.getTrending();
   // dataSource.getComingSoon();
   // dataSource.getPlayingNow();
-  // GetTrending getTrending = GetTrending(movieRepository);
+  GetTrending getTrending = GetTrending(movieRepository);
   GetTrending getTrending = getIt.getItInstance<GetTrending>();
   final Either<AppError, List<MovieEntity>?>? eitherResponse =
       await getTrending(NoParams());
