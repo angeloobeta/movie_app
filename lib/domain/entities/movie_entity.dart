@@ -9,7 +9,7 @@ class MovieEntity extends Equatable {
   final num? voteAverage;
   final String? overView;
 
-  MovieEntity({
+  const MovieEntity({
     required this.id,
     required this.posterPath,
     required this.backDropPath,
