@@ -20,9 +20,9 @@ Future<void> main() async {
   // MovieRepository movieRepository = MovieRepositoryImp(dataSource);
   // movieRepository.getPlayingNow();
   // movieRepository.getTrending();
-  // dataSource.getTrending();
-  // dataSource.getComingSoon();
-  // dataSource.getPlayingNow();
+  dataSource.getTrending();
+  dataSource.getComingSoon();
+  dataSource.getPlayingNow();
   GetTrending getTrending = GetTrending(movieRepository);
   GetTrending getTrending = getIt.getItInstance<GetTrending>();
   final Either<AppError, List<MovieEntity>?>? eitherResponse =
