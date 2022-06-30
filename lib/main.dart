@@ -15,15 +15,15 @@ import 'domain/entities/non_params.dart';
 
 Future<void> main() async {
   unawaited(getIt.init());
-  // ApiClient apiClient = ApiClient(Client());
-  // MovieRemoteDataSource dataSource = MovieRemoteDataSourceImpl(apiClient);
-  // MovieRepository movieRepository = MovieRepositoryImp(dataSource);
-  // movieRepository.getPlayingNow();
-  // movieRepository.getTrending();
-  // dataSource.getTrending();
-  // dataSource.getComingSoon();
-  // dataSource.getPlayingNow();
-  // GetTrending getTrending = GetTrending(movieRepository);
+  ApiClient apiClient = ApiClient(Client());
+  MovieRemoteDataSource dataSource = MovieRemoteDataSourceImpl(apiClient);
+  MovieRepository movieRepository = MovieRepositoryImp(dataSource);
+  movieRepository.getPlayingNow();
+  movieRepository.getTrending();
+  dataSource.getTrending();
+  dataSource.getComingSoon();
+  dataSource.getPlayingNow();
+  GetTrending getTrending = GetTrending(movieRepository);
   GetTrending getTrending = getIt.getItInstance<GetTrending>();
   final Either<AppError, List<MovieEntity>?>? eitherResponse =
       await getTrending(NoParams());
