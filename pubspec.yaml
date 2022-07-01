@@ -39,6 +39,7 @@ dependencies:
   dartz: ^0.10.1
   get_it: ^7.2.0
   pedantic: ^1.11.1
+  flutter_screenutil:
 
 dev_dependencies:
   flutter_test:
