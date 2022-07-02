@@ -29,11 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // The top part is 60% of the fractional screen while the bottom is 40% fractional of the screen
     return Scaffold(
       body: Stack(
-        // This allows the stack to take all the availsable space
+        // This allows the stack to take all the available space
         fit: StackFit.expand,
+        // The top part is 60% of the fractional screen while the bottom is 40% fractional of the screen
         children: const [
           FractionallySizedBox(
             alignment: Alignment.topCenter,
