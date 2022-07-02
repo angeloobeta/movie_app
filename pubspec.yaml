@@ -41,6 +41,7 @@ dependencies:
   pedantic: ^1.11.1
   flutter_screenutil:
   google_fonts: ^3.0.1
+  flutter_bloc: ^8.0.1
 
 dev_dependencies:
   flutter_test:
