@@ -11,5 +11,5 @@ void main() {
       SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]));
   // Initialize GetIt to provide us with dependencies
   unawaited(getIt.init());
-  runApp(movieApp());
+  runApp(MovieApp());
 }

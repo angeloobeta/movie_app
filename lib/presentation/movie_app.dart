@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/home_screen.dart';
 import 'package:movie_app/presentation/theme/theme_text.dart';
 
 import '../common/screenutil/screenutil.dart';
 import '../themes/app_color.dart';
+import 'journey/home/home_screen.dart';
 
 class MovieApp extends StatelessWidget {
   const MovieApp({Key? key}) : super(key: key);
