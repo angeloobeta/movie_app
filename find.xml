@@ -1,8 +1,5 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Directory '…/lib/presentation/blocs [movie_app]'" />
-    <option name="defaultScopeName" value="Directory '…/lib/presentation/blocs [movie_app]'" />
-    <option name="SEARCH_SCOPE" value="Directory '…/lib/presentation/blocs [movie_app]'" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.xml</mask>
