@@ -5,6 +5,8 @@ import 'dart:ui' show FlutterWindow;
 import 'package:flutter/widgets.dart';
 
 class ScreenUtil {
+  // set the default width and height to 414 and 896 base on the designer mockup
+  // there are not the device size. Else invoke ScreenUtil.init
   static const Size defaultSize = Size(414, 896);
   static ScreenUtil _instance = ScreenUtil._();
 
