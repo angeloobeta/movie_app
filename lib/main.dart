@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+import 'package:movie_app/presentation/movie_app.dart';
 import 'package:pedantic/pedantic.dart';
 
 void main() {
