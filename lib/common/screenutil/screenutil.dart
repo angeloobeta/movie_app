@@ -5,7 +5,7 @@ import 'dart:ui' show FlutterWindow;
 import 'package:flutter/widgets.dart';
 
 class ScreenUtil {
-  static const Size defaultSize = Size(360, 690);
+  static const Size defaultSize = Size(414, 896);
   static ScreenUtil _instance = ScreenUtil._();
 
   /// Size of the phone in UI Design , dp
