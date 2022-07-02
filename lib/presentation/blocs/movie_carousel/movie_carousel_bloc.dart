@@ -8,7 +8,6 @@ import 'package:movie_app/domain/use_cases/get_trending.dart';
 import '../../../domain/entities/non_params.dart';
 
 part 'movie_carousel_event.dart';
-
 part 'movie_carousel_state.dart';
 
 class MovieCarouselBloc extends Bloc<MovieCarouselEvent, MovieCarouselState> {
