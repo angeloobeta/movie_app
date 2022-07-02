@@ -21,6 +21,12 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    movieCarouselBloc?.close();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container();
   }

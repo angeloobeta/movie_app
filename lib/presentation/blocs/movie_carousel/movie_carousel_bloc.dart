@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:blocs/blocs.dart';
+import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:movie_app/domain/entities/movie_entity.dart';
 import 'package:movie_app/domain/use_cases/get_trending.dart';
