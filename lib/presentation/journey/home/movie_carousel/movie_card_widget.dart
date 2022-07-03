@@ -7,7 +7,7 @@ import 'package:movie_app/data/core/api_constants.dart';
 
 class MovieCardWidget extends StatelessWidget {
   final int movieId;
-  final String postalPath;
+  final String? postalPath;
 
   const MovieCardWidget(
       {Key? key, required this.movieId, required this.postalPath})

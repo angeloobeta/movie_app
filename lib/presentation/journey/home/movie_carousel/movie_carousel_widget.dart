@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_app/domain/entities/movie_entity.dart';
 
 import '../../../widget/movie_app_bar.dart';
+import 'movie_page_view.dart';
 
 class MovieCarouselWidget extends StatelessWidget {
   final List<MovieEntity>? movies;
@@ -17,7 +18,7 @@ class MovieCarouselWidget extends StatelessWidget {
     return Column(
       children: [
         MovieAppBar(),
-        MoviePageView(movies: movies, intialPage: defaultIndex)
+        MoviePageView(movies: movies, initialPage: defaultIndex)
       ],
     );
   }
